@@ -55,3 +55,26 @@ python read_jsonl.py --data_file data/json/test.json --save_file data/ner/train.
 
 And use the processed data as the input of the model.
 
+
+## 📜 License
+
+This dataset is released under the [MIT License](LICENSE).
+
+## 📚 Citation
+
+If you use this dataset in your research, please cite it as follows:
+
+```bibtex
+@inproceedings{fei-cui-2023-enhancing,
+title = "Enhancing Grammatical Error Correction Systems with Explanations",
+author = “Fei, Yuejiao  and
+   Cui, Leyang and
+   Yang, Sen and
+   Lam, Wai and
+   Lan, Zhenzhong and
+   Shi, Shuming”,
+month = jul,
+year = "2023”,
+address = “Toronto, Canada”,
+publisher = "Association for Computational Linguistics",
+}
