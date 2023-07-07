@@ -1,6 +1,14 @@
 # Explainable Grammmar Error Correction
-[Enhancing Grammatical Error Correction Systems with Explanations](https://arxiv.org/pdf/2305.15676v1.pdf) (ACL2023)
+This repository provides the dataset and code for the explainable grammmar error correction task as reported in this paper:
+
+> Enhancing Grammatical Error Correction Systems with Explanations
+>
+> Yuejiao Fei∗, Leyang Cui†, Sen Yang, Wai Lam, Zhenzhong Lan, Shuming Shi
+>
+> 2023 The 61st Annual Meeting of the Association for Computational Linguistics(ACL)(Oral)([PDF](https://arxiv.org/pdf/2305.15676v1.pdf))
+
 ## 🚀Introduction
+
 To help language learners understand why the Grammmar Error Correction system makes a certain correction, we present EXPECT, a large dataset with evidence words
 and grammatical error types labeled. 
 
@@ -55,6 +63,29 @@ python read_jsonl.py --data_file data/json/test.json --save_file data/ner/train.
 
 And use the processed data as the input of the model.
 
+
+## 📈 Train and Evaluate Models
+
+1. To train and evaluate Labeling-based **Error+Correction** model
+
+```
+python run.py cfgs/train_error_correction.py
+python run.py cfgs/eval_error_correction.py
+```
+
+2. To train and evaluate Labeling-based **Error+Correction+CE** model
+
+```
+python run.py cfgs/train_error_correction_ce.py
+python run.py cfgs/eval_error_correction_ce.py
+```
+
+3. To train and evaluate Labeling-based **Error+Correction+CE+Syntax** model
+
+```
+python run.py cfgs/train_error_correction_ce_syntax.py
+python run.py cfgs/eval_error_correction_ce_syntax.py
+```
 
 ## 📜 License
 

@@ -4,8 +4,8 @@ import pickle
 
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument("--data_file", type=str, default='data/json/test.json')
-parser.add_argument("--save_file", type=str, default='data/ner/test.pkl')
+parser.add_argument("--data_file", type=str, default='data/json/train.json')
+parser.add_argument("--save_file", type=str, default='data/ner/train.pkl')
 args = parser.parse_args()
 
 
